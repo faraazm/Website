@@ -40,7 +40,7 @@ export default {
 }
 .info {
   width: 100%;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.15rem;
   line-height: 1.35;
 }

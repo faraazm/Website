@@ -1,4 +1,27 @@
 
+const prismicEndpoint = 'https://faraazmotiwala.cdn.prismic.io/api/v2';
+
+// TODO: Factor in Page Size > 100
+const routes = () =>
+	Prismic.getApi(prismicEndpoint)
+		.then(api =>
+			api.query(Prismic.Predicates.at('document.type', 'blog-post'), {
+				pageSize: 100,
+				orderings: '[my.blog-post.uid]',
+			}),
+		)
+		.then(res => {
+			if (res.total_pages > 1) {
+				console.warn('we have more than 100 pages, fix it');
+				process.exit(1);
+			}
+			return [
+				'/',
+				...res.results.map(page => `${page.uid.replace(/_/g, '/')}/`),
+				'404',
+			];
+});
+
 export default {
   mode: 'universal',
   /*
@@ -83,5 +106,8 @@ export default {
     */
     extend(config, ctx) {
     }
+  },
+  generate: {
+    routes
   }
 }
