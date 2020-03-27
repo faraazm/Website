@@ -3,7 +3,7 @@
     <div class="hero-body pb-0">
       <div class="container">
         <nuxt-link to="/" class="mb-3 is-size-4 go-back">
-          <font-awesome-icon class="icon-item" :icon="['fas', 'angle-left']" />Back to Home
+          <font-awesome-icon class="icon-item" :icon="['fas', 'angle-left']" /> Back to Home
         </nuxt-link>
         <h1 class="is-size-1 is-size-3-mobile">
           My Favorite
