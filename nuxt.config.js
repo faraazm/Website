@@ -1,21 +1,5 @@
 import Prismic from 'prismic-javascript';
 
-async function fetchBlogRoutes(){ 
-  try {
-    const api = await Prismic.api("https://faraazmotiwala.cdn.prismic.io/api/v2");
-    const posts = await api.query(Prismic.Predicates.at('document.type', 'blog-post'));
-    const routes = await posts.results.map(post => `/blog/${post.uid}`);
-    return routes;
-  } catch(e){
-    console.log(e);
-  }
-}
-
-// async function test(){
-//   const test = await fetchBlogs();
-//   console.log(test);
-// }
-
 export default {
   mode: 'universal',
   /*
@@ -102,8 +86,23 @@ export default {
     }
   },
   generate: {
-    async routes(){
-      await fetchBlogs();
+    routes: async function () {
+      try {
+        const api = await Prismic.api("https://faraazmotiwala.cdn.prismic.io/api/v2");
+        const posts = await api.query(Prismic.Predicates.at('document.type', 'blog-post'));
+        const routes = await posts.results.map(payload => {
+          return {
+            route: `/blog/${payload.uid}`,
+            payload
+          }
+        });
+
+        return Promise.all([routes]).then(values => {
+          return [...values[0]];
+        });
+      } catch (e) {
+        console.log(e);
+      }
     }
   }
 }
