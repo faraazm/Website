@@ -107,7 +107,7 @@ export default {
         },
         {
           title: "Podcasts 🎙️",
-          caption: "Some podcasts that I enjoy listening to :)",
+          caption: "Some podcasts that I enjoy listening to",
           link: "/podcasts"
         }
       ]

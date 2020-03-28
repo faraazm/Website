@@ -8,7 +8,7 @@
           </nuxt-link>
           <h1 class="is-size-1 is-size-3-mobile">
             My
-            <span class="has-text-weight-bold">Skills</span> 🧰
+            <span class="has-text-weight-bold">Skills</span> 🤸‍♂️
           </h1>
           <h2 class="subtitle">Full Stack Developer and Designer</h2>
           <p

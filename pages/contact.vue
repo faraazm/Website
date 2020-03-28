@@ -7,7 +7,7 @@
         </nuxt-link>
         <h1 class="is-size-1 is-size-3-mobile">
           Contact
-          <span class="has-text-weight-bold">Me</span> 💌
+          <span class="has-text-weight-bold">Me</span> ✉️
         </h1>
         <h2 class="subtitle mb-3">Let's talk! I would love to hear from you!</h2>
         <p
