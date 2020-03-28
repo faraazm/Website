@@ -13,7 +13,8 @@ export default {
       { hid: 'description', name: 'description', content: 'My name is Faraaz Motiwala and I am a Full Stack Developer and Designer based in New York. I am a freelancer, artist, and designer and I truly enjoy what I do. I am extremely passionate and detail-oriented towards creating the most beautiful interfaces and designs.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700&display=swap' }
     ]
   },
   /*
