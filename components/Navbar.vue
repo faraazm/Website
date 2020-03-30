@@ -1,8 +1,8 @@
 <template>
-  <b-navbar class="container" fixed-top>
+  <b-navbar class="container">
     <template slot="brand">
       <b-navbar-item tag="nuxt-link" to="/">
-          <h1 class="is-size-3 has-text-weight-bold">< FRZ /></h1>
+          <h1 class="is-size-3 has-text-weight-bold has-text-primary">< FRZ /></h1>
       </b-navbar-item>
     </template>
     <template slot="end">

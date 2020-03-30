@@ -3,15 +3,15 @@
     <section class="hero">
       <div class="hero-body pb-0">
         <div class="container">
-          <nuxt-link to="/" class="mb-3 is-size-4 go-back">
+          <nuxt-link to="/" class="mb-3 is-size-4 is-size-5-mobile go-back">
             <font-awesome-icon class="icon-item" :icon="['fas', 'angle-left']" /> Back to Home
           </nuxt-link>
-          <h1 class="is-size-1 is-size-3-mobile">
+          <h1 class="is-size-1 is-size-3-mobile has-text-weight-light">
             My
             <span class="has-text-weight-bold">Projects</span> 🚧
           </h1>
           <h2
-            class="subtitle mb-3"
+            class="subtitle mb-3 is-size-6-mobile has-text-weight-light"
           >Some projects I have worked on. You can find them all on my GitHub!</h2>
         </div>
       </div>

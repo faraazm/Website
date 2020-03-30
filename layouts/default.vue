@@ -7,8 +7,12 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import VueTypedJs from 'vue-typed-js'
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
+Vue.use(VueTypedJs);
 
 export default {
   components: { Navbar, Footer }
@@ -22,6 +26,11 @@ export default {
 }
 .go-back {
   color: #b9b9b9;
+  font-weight: 300 !important;
+  display: block;
+}
+.mb-0 {
+  margin-bottom: 0px;
 }
 .mb-1 {
   margin-bottom: 10px;
@@ -48,5 +57,14 @@ export default {
   .info {
     width: 66%;
   }
+}
+.detail-card {
+  border-radius: 10px;
+  /* box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.08); */
+  padding: 10px;
+  height: auto;
+}
+.detail-card .card-content .content h1 {
+  color: #181818;
 }
 </style>

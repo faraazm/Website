@@ -1,26 +1,28 @@
 <template>
-  <div>
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8">
     <section class="hero">
       <div class="hero-body pb-0">
         <div class="container">
-          <nuxt-link to="/" class="mb-3 is-size-4 go-back">
+          <nuxt-link to="/" class="mb-3 is-size-4 is-size-5-mobile go-back">
             <font-awesome-icon class="icon-item" :icon="['fas', 'angle-left']" /> Back to Home
           </nuxt-link>
-          <h1 class="is-size-1 is-size-3-mobile">
+          <h1 class="is-size-1 is-size-3-mobile has-text-weight-light">
             My
             <span class="has-text-weight-bold">Skills</span> 🤸‍♂️
           </h1>
-          <h2 class="subtitle">Full Stack Developer and Designer</h2>
+          <h2 class="subtitle mb-3 is-size-6-mobile has-text-weight-light">Full Stack Developer and Designer</h2>
           <p
-            class="info subtitle is-size-6-mobile"
-          >I am well-versed with Full Stack Development and graphic design. I have a passion for combining art and technology!</p>
+            class="is-size-6-mobile has-text-weight-light"
+          >I am well-versed with Full Stack Development and graphic design. I have a passion for combining art and technology! I continue to learn new things everyday and can't wait to keep adding on to this list!</p>
         </div>
       </div>
     </section>
     <section class="section">
       <div class="container">
         <div class="skills mb-3" :key="skill.title" v-for="skill in skills">
-          <h3 class="is-size-4 mb-1">
+          <h3 class="is-size-4 mb-1 has-text-weight-light">
             <span class="has-text-weight-semibold">{{ skill.title }}</span>
             {{ skill.type }}
           </h3>
@@ -28,6 +30,8 @@
         </div>
       </div>
     </section>
+      </div>
+    </div>
   </div>
 </template>
 

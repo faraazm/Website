@@ -3,14 +3,14 @@
     <section class="hero">
       <div class="hero-body pb-0">
         <div class="container">
-          <nuxt-link to="/" class="mb-3 is-size-4 go-back">
+          <nuxt-link to="/" class="mb-3 is-size-4 is-size-5-mobile go-back">
             <font-awesome-icon class="icon-item" :icon="['fas', 'angle-left']" /> Back to Home
           </nuxt-link>
-          <h1 class="is-size-1 is-size-3-mobile">
-            Welcome to my
+          <h1 class="is-size-1 is-size-3-mobile has-text-weight-light">
+            My
             <span class="has-text-weight-bold">Blog</span> 📰
           </h1>
-          <h2 class="subtitle mb-3">Quick tips, tutorials, and general topics</h2>
+          <h2 class="subtitle mb-3 is-size-6-mobile has-text-weight-light">Quick tips, tutorials, and general topics</h2>
         </div>
       </div>
     </section>

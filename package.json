@@ -25,7 +25,8 @@
     "nuxt-fontawesome": "^0.4.0",
     "prismic-javascript": "^2.7.0",
     "prismic-vue": "^2.0.0",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",

@@ -3,7 +3,7 @@
     <section class="hero pt-2">
       <div class="hero-body pb-0">
         <div class="container">
-          <nuxt-link to="/blog" class="mb-3 is-size-4 go-back">
+          <nuxt-link to="/blog" class="mb-3 is-size-4 is-size-5-mobile go-back">
             <font-awesome-icon class="icon-item" :icon="['fas', 'angle-left']" /> Back to Blogs
           </nuxt-link>
           <h1 class="is-size-1 is-size-3-mobile">{{ $prismic.asText(post.data.title) }}</h1>

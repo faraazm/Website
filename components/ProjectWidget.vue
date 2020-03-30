@@ -1,17 +1,16 @@
 <template>
-
-    <div class="card">
+  <a :href="project.data.link.url" target="_blank">
+    <div class="card detail-card mb-1">
       <div class="card-content">
-        <p class="title is-4">{{ $prismic.asText(project.data.title) }}</p>
-        <p class="subtitle is-6">{{ $prismic.asText(project.data.caption) }}</p>
-        <b-button tag="a"
-                :href="project.data.link.url"
-                target="_blank">
-                View Project
-            </b-button>
+        <div class="content">
+          <h1
+            class="is-size-4-mobile is-size-5-tablet is-size-3-desktop"
+          >{{ $prismic.asText(project.data.title) }}</h1>
+          <p class="subtitle is-6">{{ $prismic.asText(project.data.caption) }}</p>
+        </div>
       </div>
     </div>
-
+  </a>
 </template>
 
 <script>
@@ -45,4 +44,9 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (min-width: 750px) {
+  .detail-card {
+    min-height: auto;
+  }
+}
 </style>

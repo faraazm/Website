@@ -3,15 +3,15 @@
     <section class="hero is-bold pb-0">
       <div class="hero-body">
         <div class="container">
-          <h1 class="is-size-1 is-size-3-mobile">
+          <h1 class="is-size-1 is-size-3-mobile has-text-weight-light">
             Hello! 👋 I'm
             <span class="has-text-weight-bold">Faraaz</span>
           </h1>
-          <h2
-            class="subtitle is-size-6-mobile"
-          >I am a Full Stack Developer and Designer based in New York</h2>
+          <vue-typed-js class="mb-3" :strings="typedStrings" loop :typeSpeed="30" :backSpeed="30" :backDelay="1000">
+            <h2 class="is-size-4 is-size-5-mobile has-text-weight-light">I am <span class="typing"></span></h2>
+          </vue-typed-js>
           <nuxt-link to="/about">
-            <b-button type="button is-medium">About Me</b-button>
+            <b-button class="mb-2" type="button">About Me</b-button>
           </nuxt-link>
           <div class="social-icons">
             <a href="https://www.instagram.com/faraaz.io/" target="_blank">
@@ -110,18 +110,26 @@ export default {
           caption: "Some podcasts that I enjoy listening to",
           link: "/podcasts"
         }
+      ],
+      typedStrings: [
+        'a <span class="has-text-weight-semibold">JavaScript Rockstar 🤘</span>',
+        'a <span class="has-text-weight-semibold">Dream Alchemist 🧪</span>',
+        'a <span class="has-text-weight-semibold">Software Ninjaneer 👨‍🎤</span>',
+        'a <span class="has-text-weight-semibold">Full Stack Magician 🧝🏻</span>',
+        'a <span class="has-text-weight-semibold">Creative Innovator 👨‍🎨</span>'
       ]
     };
   },
   head() {
     return {
-      title: 'Faraaz Motiwala',
+      title: "Faraaz Motiwala",
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
           hid: "index",
           name: "faraaz",
-          content: "Welcome to my website! Here, you can learn more about my passion, hobbies and interests or keep up with my blog for quick tips and tutorials!"
+          content:
+            "Welcome to my website! Here, you can learn more about my passion, hobbies and interests or keep up with my blog for quick tips and tutorials!"
         }
       ]
     };
@@ -135,15 +143,6 @@ export default {
 }
 .pt-0 {
   padding-top: 0px;
-}
-.detail-card {
-  border-radius: 10px;
-  /* box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.08); */
-  padding: 10px;
-  height: auto;
-}
-.detail-card .card-content .content h1 {
-  color: #181818;
 }
 .social-icons {
   margin: 20px 0px;
